@@ -28,7 +28,8 @@ export default class WordCard extends Component {
             if(guess.join('').toString() == this.state.word){
                 this.setState({guess: [], completed: true})
             }else{
-                this.setState({guess: [], attempt: this.state.attempt + 1})
+                let chars = _.shuffle(Array.from(this.state.word))
+                this.setState({guess: [],chars: chars , attempt: this.state.attempt + 1})
             }
         }
     }
