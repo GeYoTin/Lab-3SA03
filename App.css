@@ -21,6 +21,11 @@
   color: #09d3ac;
 }
 
+.activeCard {
+  color: red;
+  background: pink;
+}
+
 .card {
   display: inline-block;
   text-align: center;
